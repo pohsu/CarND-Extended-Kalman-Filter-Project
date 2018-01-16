@@ -28,6 +28,10 @@ public:
   * A helper method to calculate Jacobians.
   */
   MatrixXd CalculateJacobian(const VectorXd& x_state);
+  /**
+  * A helper method to calculate h(x).
+  */
+  VectorXd CalculateNonlinear_h(const VectorXd& x_state);
 
 };
 
